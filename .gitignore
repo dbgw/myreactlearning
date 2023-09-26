@@ -1,0 +1,20 @@
+# Basic files
+*.swp
+*~
+\#*\#
+.DS_Store
+.trash/
+.idea/
+.htpasswd
+
+# Docker
+docker-compose.override.yml
+/data/mysql
+
+# NodeJS
+node_modules
+app/symfony/public/media
+app/symfony/composer.lock
+app/reactjs/yarn.lock
+.vscode/settings.json
+.vscode
