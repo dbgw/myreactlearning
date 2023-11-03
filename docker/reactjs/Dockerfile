@@ -3,7 +3,7 @@ ARG NODE_VERSION=14
 FROM node:${NODE_VERSION}-alpine AS fingz_client_deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY app/reactjs/package*.json app/reactjs/yarn.lock ./
+COPY app/reactjs/package*.json ./
 RUN yarn
 
 FROM node:${NODE_VERSION}-alpine AS fingz_client_builder
