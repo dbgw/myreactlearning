@@ -12,6 +12,16 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <meta name="author" content="Fingz" />
   <title>Fingz – Réparez les objets qui vous sont chers</title>
+  <script>
+    console.log('No index page');
+    if (window.location.pathname === '/qui-sommes-nous') {
+      let meta = document.createElement('meta');
+      meta.name = "robots";
+      meta.content = "noindex";
+      document.querySelector('head').appendChild(meta);
+
+    }
+  </script>
 
   <script type="text/javascript"
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCbskw_xe-kkAIjFqR1ghCLtAZt9DAFP8&libraries=places"></script>
