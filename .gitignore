@@ -8,7 +8,7 @@
 .htpasswd
 
 # Docker
-docker-compose.override.yml
+docker compose.override.yml
 /data/mysql
 
 # NodeJS
