@@ -21,7 +21,7 @@
         "nelmio/cors-bundle": "^2.1",
         "phpdocumentor/reflection-docblock": "^5.2",
         "sensio/framework-extra-bundle": "^6.2",
-        "stof/doctrine-extensions-bundle": "dev-master",
+        "stof/doctrine-extensions-bundle": "dev-main",
         "stripe/stripe-php": "^7.97",
         "symfony/asset": "5.3.*",
         "symfony/console": "5.3.*",
