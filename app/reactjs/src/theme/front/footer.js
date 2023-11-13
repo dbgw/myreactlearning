@@ -35,7 +35,7 @@ export default function Footer() {
                   <ul>
                     <li>
                       <a href={LINK_EXTERNAL_WhoAreWe} target="_blank">
-                        Qui sommes-nous
+                        Qui sommes-nous ?
                       </a>
                     </li>
 
