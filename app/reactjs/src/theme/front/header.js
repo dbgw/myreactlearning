@@ -250,12 +250,29 @@ export default function Header() {
                 <Col md={9}>
                   <BlocMenuNav>
                     <MenuNav>
+                    <LinNavkItem
+                       to={{pathname:LINK_EXTERNAL_WhoAreWe}} 
+                       target="_blank"
+                       >
+                        Qui sommes-nous ?
+                      </LinNavkItem>
+                  
                       <LinNavkItem
                         to={{ pathname: "https://www.fingzpartenaires.fr/" }}
                         target="_blank"
                       >
                         Devenez réparateur partenaire
                       </LinNavkItem>
+                      <LinNavkItem
+                        to={ROUTES.CONNEXION.url}
+                        target="_blank"
+                      >
+                      <ButtonDef
+                            textButton="S’identifier"
+                      />
+                      </LinNavkItem>
+                       
+                     
                     </MenuNav>
                     <LoginBtns>
                       {auth.user ? (
@@ -272,17 +289,7 @@ export default function Header() {
                               });
                             }}
                           />
-                          <ButtonDef
-                            textButton="Espace Réparateur"
-                            className="light-btn"
-                            onClick={() => {
-                              setShowModal(true);
-                              setDataModal({
-                                typeModal: "reparateur",
-                                title: "Espace réparateur",
-                              });
-                            }}
-                          />
+                       
                         </>
                       )}
                     </LoginBtns>

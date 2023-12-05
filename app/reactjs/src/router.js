@@ -7,6 +7,7 @@ import FoundPage from "./components/foundPage";
 import imgFound from "./assets/images/img-page-found.svg";
 
 const routesList = [
+
   {
     exact: true,
     path: ROUTES.UNIVERSE.url,
@@ -24,6 +25,12 @@ const routesList = [
     path: ROUTES.FICHEPRESTATION.url,
     component: lazy(() => import("./views/front/fichePrestation")),
     roles: ROUTES.FICHEPRESTATION.roles,
+  },
+  {
+    exact: true,
+    path: ROUTES.CONNEXION.url,
+    component: lazy(() => import("./views/connexions")),
+    roles: ROUTES.CONNEXION.roles,
   },
   {
     exact: true,
@@ -195,7 +202,7 @@ export default function Router() {
             )
           )}
           <Route>
-            <FoundPage image={imgFound} title="Whoops! page non trouvée" />
+            <FoundPage image={imgFound} title="Wooohoooooops! page non trouvée" />
           </Route>
           <Redirect
             to={{
