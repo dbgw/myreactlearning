@@ -89,7 +89,6 @@ const ROUTES = {
   HOW_ARE_WE: { url: "/qui-sommes-nous", roles: [] },
   CGU: { url: "/condition-generales-utilisation", roles: [] },
   POLITIQUE_CONFIDENTIALITE: { url: "/politique-de-confidentialite", roles: [] },
-  IDENTIFICATION: { url: "/identification", roles: [] },
   CONDITION_COMMERCIALE: { url: "/conditions-commerciales", roles: [] },
   CHARTE_COOKIES: { url: "/charte-cookies", roles: [] },
   MENTIONS_LEGALES: { url: "/mentions-legales", roles: [] },

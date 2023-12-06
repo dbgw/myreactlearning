@@ -202,7 +202,7 @@ export default function Router() {
             )
           )}
           <Route>
-            <FoundPage image={imgFound} title="Wooohoooooops! page non trouvée" />
+            <FoundPage image={imgFound} title="Whoops! page non trouvée" />
           </Route>
           <Redirect
             to={{
