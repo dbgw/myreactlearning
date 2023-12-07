@@ -254,7 +254,26 @@ export default function Header() {
                        to={{pathname:LINK_EXTERNAL_WhoAreWe}} 
                        target="_blank"
                        >
+                        Nous réparons 
+                    </LinNavkItem>
+                    <LinNavkItem
+                       to={{pathname:LINK_EXTERNAL_WhoAreWe}} 
+                       target="_blank"
+                       >
+                        Comment ça marche ?
+                    </LinNavkItem>
+                    <LinNavkItem
+                       to={{pathname:LINK_EXTERNAL_WhoAreWe}} 
+                       target="_blank"
+                       >
                         Qui sommes-nous ?
+                      </LinNavkItem>
+                  
+                      <LinNavkItem
+                       to={{pathname:LINK_EXTERNAL_WhoAreWe}} 
+                       target="_blank"
+                       >
+                        Blog
                       </LinNavkItem>
                   
                       <LinNavkItem
@@ -263,15 +282,8 @@ export default function Header() {
                       >
                         Devenez réparateur partenaire
                       </LinNavkItem>
-                      <LinNavkItem
-                        to={ROUTES.CONNEXION.url}
-                        target="_blank"
-                      >
-                      <ButtonDef
-                            textButton="S’identifier"
-                      />
-                      </LinNavkItem>
-                       
+                    
+                    
                      
                     </MenuNav>
                     <LoginBtns>

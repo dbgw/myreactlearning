@@ -137,7 +137,7 @@ export default function Select({
     }),
     indicatorContainer: (provided, state) => ({
       ...provided,
-      color: "#9ACA3C",
+      color: "#4D5F68",
       transform: state.isFocused ? "rotate(-180deg)" : "rotate(0deg)",
     }),
 

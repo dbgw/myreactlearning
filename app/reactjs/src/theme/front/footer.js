@@ -24,7 +24,44 @@ export default function Footer() {
               <img src={LogoFooter} alt="Fingz" />
               </Link>
             </div>
+          
+            <div className="socials">
+              <p
+                className="title-menu-footer"
+                style={{
+                  fontSize: "15px",
+                  color: "#fff",
+                  fontWeight: "600",
+                  textTransform: "uppercase",
+                }}
+              >
+                Suivez-nous
+              </p>
+              <Link
+                to={{ pathname: "https://www.facebook.com/FingzRepair" }}
+                target="_blank"
+              >
+                <FacebookIcon />
+              </Link>
+              <Link
+                to={{ pathname: "https://www.instagram.com/fingz.fr/" }}
+                target="_blank"
+              >
+                <InstagramIcon />
+              </Link>
+              <Link to={{ pathname: "#" }} target="_blank">
+                <TwitterIcon />
+              </Link>
+              <Link
+                to={{ pathname: "https://www.linkedin.com/company/fingz/" }}
+                target="_blank"
+              >
+                <LinkedinIcon />
+              </Link>
+            </div>
+          
           </Col>
+         
           <Col xl={7}>
             <Row>
               <Col md={6}>
@@ -74,42 +111,7 @@ export default function Footer() {
               </Col>
             </Row>
           </Col>
-          <Col xl={3}>
-            <div className="socials">
-              <p
-                className="title-menu-footer"
-                style={{
-                  fontSize: "15px",
-                  color: "#fff",
-                  fontWeight: "600",
-                  textTransform: "uppercase",
-                }}
-              >
-                Suivez-nous
-              </p>
-              <Link
-                to={{ pathname: "https://www.facebook.com/FingzRepair" }}
-                target="_blank"
-              >
-                <FacebookIcon />
-              </Link>
-              <Link
-                to={{ pathname: "https://www.instagram.com/fingz.fr/" }}
-                target="_blank"
-              >
-                <InstagramIcon />
-              </Link>
-              <Link to={{ pathname: "#" }} target="_blank">
-                <TwitterIcon />
-              </Link>
-              <Link
-                to={{ pathname: "https://www.linkedin.com/company/fingz/" }}
-                target="_blank"
-              >
-                <LinkedinIcon />
-              </Link>
-            </div>
-          </Col>
+
         </Row>
         <p
           className="mt-4 text-center"

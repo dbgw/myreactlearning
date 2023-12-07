@@ -3,7 +3,7 @@ import styled from "styled-components";
 import iconQuestionGreen from "../images/icons/icon-question-green.svg";
 import { mixinIcon } from "./icons";
 
-export const GreenColor = "#9ACA3C";
+export const GreenColor = "#4D5F68";
 export const OrangeColor = "#e67c2e";
 export const BlocFormModal = styled.div``;
 export const TitelForm = styled.div`
@@ -287,7 +287,7 @@ export const ModalPopinStyle = styled(Modal)`
       font-size: 16px;
       line-height: 21px;
       .titre-message-confirm {
-        color: #9ACA3C;
+        color: #4D5F68;
         font-weight: 600;
         font-size: 17px;
         text-transform: uppercase;

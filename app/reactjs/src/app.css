@@ -16,7 +16,7 @@ body.menu-is-show {
   overflow: hidden;
 }
 div[class$="-option"]:active {
-  background-color: #9aca3b;
+  background-color: #4D5F68;
 }
 
 .full-spinner {

@@ -61,7 +61,7 @@ export const DevisSideDetailStyle = styled.div`
       margin: 0;
       font-size: 20px;
       font-weight: 500;
-      color: #9ACA3C;
+      color: #4D5F68;
     }
   }
 
@@ -90,7 +90,7 @@ export const DevisSideDetailStyle = styled.div`
     h5 {
       font-size: 16px;
       font-weight: 400;
-      color: #9ACA3C;
+      color: #4D5F68;
       margin: 0 0 8px 0;
     }
 
@@ -109,7 +109,7 @@ export const DevisSideDetailStyle = styled.div`
         margin: 0 0 10px 0;
         font-size: 18px;
         font-weight: 500;
-        color: #9ACA3C;
+        color: #4D5F68;
       }
 
       h4 {
@@ -148,7 +148,7 @@ export const DsdHeaderStyle = styled.div`
     margin: 0;
     font-size: 20px;
     font-weight: 500;
-    color: #9ACA3C;
+    color: #4D5F68;
   }
 `;
 
@@ -195,7 +195,7 @@ export const DsdContentStyle = styled.div`
   h5 {
     font-size: 16px;
     font-weight: 400;
-    color: #9ACA3C;
+    color: #4D5F68;
     margin: 0 0 8px 0;
   }
 
@@ -214,7 +214,7 @@ export const DsdContentStyle = styled.div`
       margin: 0 0 10px 0;
       font-size: 18px;
       font-weight: 500;
-      color: #9ACA3C;
+      color: #4D5F68;
     }
 
     h4 {
@@ -326,7 +326,7 @@ export const BlocInfoStyle = styled.div`
     }
 
     &.success-style {
-      color: #9ACA3C;
+      color: #4D5F68;
     }
   }
 
@@ -341,7 +341,7 @@ export const BlocInfoStyle = styled.div`
     }
 
     &.success-style {
-      color: #9ACA3C;
+      color: #4D5F68;
     }
 
     &.w-lg {

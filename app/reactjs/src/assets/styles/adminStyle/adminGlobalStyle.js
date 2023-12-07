@@ -1007,7 +1007,7 @@ export const BlocAdminContent = styled.div`
               font-size: 14px;
               line-height: 19px;
               display: inline-block;
-              background-color: #9ACA3C;
+              background-color: #4D5F68;
               padding: 5px 10px;
               border-radius: 2px;
               color: #fff;
@@ -2293,7 +2293,7 @@ export const DatePickerStyle = styled.div`
         }
         .react-calendar__navigation__label__labelText {
           &.react-calendar__navigation__label__labelText--from {
-            color: #9ACA3C;
+            color: #4D5F68;
           }
         }
 
@@ -2365,7 +2365,7 @@ export const DatePickerStyle = styled.div`
             background: none;
             abbr {
               background: rgba(154, 202, 60, 0.19);
-              color: #9ACA3C;
+              color: #4D5F68;
             }
           }
         }
@@ -2391,7 +2391,7 @@ export const DatePickerStyle = styled.div`
         top: 5px;
         right: 5px;
         height: 30px;
-        background: #9ACA3C;
+        background: #4D5F68;
 
         border-radius: 25px;
 

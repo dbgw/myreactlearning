@@ -141,7 +141,7 @@ function App() {
         <a
           href={ROUTES.CHARTE_COOKIES.url}
           target="_blank"
-          style={{ color: "#9ACA3C", margin: "5px", fontWeight: "600" }}
+          style={{ color: "#4D5F68", margin: "5px", fontWeight: "600" }}
         >
           des cookies
         </a>
