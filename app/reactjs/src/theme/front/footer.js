@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import ROUTES from "../../config/routes";
 import moment from "moment";
-import { LINK_EXTERNAL_WhoAreWe, LINK_FeelAndClic } from "../../vars";
+import { LINK_EXTERNAL_WhoAreWe, LINK_FeelAndClic, LINK_Artnum } from "../../vars";
 
 export default function Footer() {
   return (
@@ -122,6 +122,11 @@ export default function Footer() {
           <Link to={{ pathname: LINK_FeelAndClic }} target="_blank">
             Feel and Clic
           </Link>{" "}
+        
+          <Link to={{ pathname: LINK_Artnum }} target="_blank">
+            Les artisans Numeriques
+          </Link>{" "}
+          
         </p>
       </Container>
     </FooterStyle>

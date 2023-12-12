@@ -20,6 +20,8 @@ export const reCaptchaKey = "6LcgZjceAAAAAHyPCWkLBZ416xCdoLGJACLZW_Rp";
 
 export const LINK_FeelAndClic = "https://www.feelandclic.com/";
 
+export const LINK_Artnum  = "https://www.artnum.com/";
+
 //export const GOOGLE_ANALYTICS_ID = "G-N3NB9HTBR9";
 export const GOOGLE_ANALYTICS_ID = "";
 

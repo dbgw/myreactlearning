@@ -15,7 +15,7 @@ import { clearErrors } from "../../helper/form";
 import Slider from "react-slick";
 import SelectCat from "../categories/selectCat";
 
-export default function BannerHome({ sliderBanner = [], title, description }) {
+export default function BannerHome({ sliderBanner = [], title, description, isDisplayedBottom  }) {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 993px)" });
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 994px)",
@@ -56,6 +56,7 @@ export default function BannerHome({ sliderBanner = [], title, description }) {
         for (let j = 0; j < o.categories.length; j++) {
           const subCategory = [];
           for (let k = 0; k < o.categories[j].children.length; k++) {
+
             subCategory.push({
               label: o.categories[j].children[k].name,
               value: o.categories[j].children[k].id,
@@ -312,6 +313,7 @@ export default function BannerHome({ sliderBanner = [], title, description }) {
 
   return (
     <PageBanner className="home-page-banner">
+      {!isDisplayedBottom && (
       <div className="slider-home-banner">
         <Slider {...settings}>
           {sliderBanner &&
@@ -322,11 +324,15 @@ export default function BannerHome({ sliderBanner = [], title, description }) {
             ))}
         </Slider>
       </div>
+      )}
       <Container>
+        {!isDisplayedBottom && (
         <div className="bloc-title-banner">
           <h1 className="title-banner-cat">{title}</h1>
           <p className="description-banner-cat">{description}</p>
         </div>
+        )}
+
         {isTabletOrMobile && (
           <div className="btn-toggle-filter" onClick={toggleFilter}>
             <SearchIcon /> Rechercher une prestation

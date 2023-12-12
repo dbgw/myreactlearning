@@ -3,9 +3,8 @@ import { useSelector } from "react-redux";
 import { Col, Container, Row } from "react-bootstrap";
 import BannerHome from "../components/front/bannerHome";
 import Base from "../theme/front/base";
-import iconRep1 from "../assets/images/icons-services-home/home-page-01.svg";
-import iconRep2 from "../assets/images/icons-services-home/home-page-02.svg";
-import iconRep3 from "../assets/images/icons-services-home/home-page-03.svg";
+import iconParcours from "../assets/images/icons-services-home/homepage-fluxparcours.svg";
+import iconPourquoichoisir from "../assets/images/icons-services-home/homepage-pourquoichoisir.svg";
 import iconRep4 from "../assets/images/icons-services-home/home-page-04.svg";
 import iconRep5 from "../assets/images/icons-services-home/home-page-05.svg";
 import iconRep6 from "../assets/images/icons-services-home/home-page-06.svg";
@@ -28,7 +27,7 @@ import * as vars from "../vars";
 export default function Home() {
   const getPathImage = (image) => (image ? vars.pathImage + image : noImage);
   const universe = useSelector((state) => state.universe);
-
+  const isDisplayedBottom = true;
   const sliderImages = [
     {
       id: 1,
@@ -60,64 +59,17 @@ export default function Home() {
       <BannerHome
         sliderBanner={sliderImages}
         title="Faites réparer les objets qui vous sont chers"
+        isDisplayedBottom={false}
       />
+      
       <ContentPageStyle>
         <Container>
           <HomeReparateur>
-            <h1 className="title-bloc">
+            <h1 className="item-reparateurs-solution">
               Il n'a jamais été aussi facile de trouver un réparateur
             </h1>
             <Row>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep1} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p>
-                      Dites-nous ce que vous voulez faire réparer
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep3} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p>
-                      Affinez votre recherche en choisissant votre prestation de
-                      service
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep2} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p>
-                      Sélectionnez un artisan réparateur recommandé et réservez
-                      en toute transparence grâce aux forfaits ou devis
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep4} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p>
-                      Payez et prenez rendez-vous avec votre réparateur en toute sécurité
-                    </p>
-                  </div>
-                </div>
-              </Col>
+              <img src={iconParcours} />
             </Row>
           </HomeReparateur>
           <HomeBlocs>
@@ -139,66 +91,17 @@ export default function Home() {
           <HomeReparateur>
             <h1 className="title-bloc">Pourquoi choisir Fingz ?</h1>
             <Row>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep5} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p className="titre-item-repa-solution">Economique</p>
-                    <p>
-                      Une réparation au juste prix qui prolonge la durée de vie
-                      de vos objets
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep6} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p className="titre-item-repa-solution">Ecologique</p>
-                    <p>
-                      En donnant une 2ème vie à vos objets, vous participez à
-                      préserver les ressources de la planète
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep7} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p className="titre-item-repa-solution">Local</p>
-                    <p>
-                      En choisissant des réparateurs près de chez vous, vous
-                      soutenez l’économie locale et limitez l’impact CO2 lié au
-                      transport
-                    </p>
-                  </div>
-                </div>
-              </Col>
-              <Col className="item-reparateurs-solution" lg={3} md={6}>
-                <div className="content-reparateur-solution">
-                  <div className="bloc-icon-repa">
-                    <img src={iconRep4} alt="" />
-                  </div>
-                  <div className="content-item-repa-solution">
-                    <p className="titre-item-repa-solution">Fiable</p>
-                    <p>
-                    Les artisans partenaires sont des professionnels qui s’engagent à vous fournir un service de qualité et à faire de la réparation leur priorité.
-                    </p>
-                  </div>
-                </div>
-              </Col>
+              <img src={iconPourquoichoisir} />
             </Row>
           </HomeReparateur>
+          
         </Container>
       </ContentPageStyle>
+      <BannerHome
+        sliderBanner={sliderImages}
+        title="Faites réparer les objets qui vous sont chers"
+        isDisplayedBottom={true}
+      />
     </Base>
   );
 }

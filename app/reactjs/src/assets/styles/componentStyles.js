@@ -287,7 +287,7 @@ export const ModalPopinStyle = styled(Modal)`
       font-size: 16px;
       line-height: 21px;
       .titre-message-confirm {
-        color: #4D5F68;
+        color: #9ACA3C;
         font-weight: 600;
         font-size: 17px;
         text-transform: uppercase;

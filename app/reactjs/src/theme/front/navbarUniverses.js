@@ -12,6 +12,7 @@ import { useMediaQuery } from "react-responsive";
 import { trimChar } from "../../helper/functions";
 
 export default function NavbarUniverses({ ...props }) {
+  const isNavBartoDisplay = false;  // Version 2024
   const { slugIdUniverse } = useParams();
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1199px)" });
   const [more, setMore] = useState(false);
@@ -100,7 +101,8 @@ export default function NavbarUniverses({ ...props }) {
   return (
     <NavCategories>
       <Container>
-        {universe.allUniverses && universe.allUniverses.length ? (
+        
+        {isNavBartoDisplay && universe.allUniverses && universe.allUniverses.length ? (
           <BlocMenuCats>
             {maxItems &&
               universe.allUniverses
@@ -128,6 +130,8 @@ export default function NavbarUniverses({ ...props }) {
         ) : (
           ""
         )}
+        
+        
       </Container>
     </NavCategories>
   );
